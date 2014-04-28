@@ -1,0 +1,353 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+/*
+Theme Name: Ty.Fidirect Care (2014)
+Theme URI: http://tyfidirectcare.com
+Description: Website theme for Ty.FiDirect Care. 
+Author: Connor Luke Goddard
+Author URI: http://connorlukegoddard.com
+Version: 1.2
+Tags: tyfi, direct, care, connor, goddard
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+*/
+/* SASS Variables */
+html,
+body {
+  height: 100%;
+  width: 100%; }
+
+body {
+  font: 0.875em "Lato", sans-serif;
+  color: #4c4c4c;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #eee;
+  width: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-weight: normal;
+  clear: both; }
+
+h1 {
+  font-size: 2.5em; }
+
+h2 {
+  font-size: 2em; }
+
+h2 span {
+  background-color: #fff;
+  padding-right: 5px; }
+
+h2 + p {
+  border-top: solid 2px #eee;
+  padding-top: 2em;
+  margin-top: -14px; }
+
+a {
+  text-decoration: none;
+  color: #4c4c4c; }
+
+a:hover {
+  text-decoration: underline; }
+
+#site-header {
+  background-color: #8a507b;
+  border-bottom: solid 2px #D692C5;
+  width: 100%; }
+
+#header-inner-container {
+  max-width: 960px;
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative; }
+  #header-inner-container #site-logo {
+    float: left;
+    padding: 10px 0; }
+    #header-inner-container #site-logo img {
+      max-width: 180px;
+      height: auto;
+      max-height: auto;
+      width: auto; }
+  #header-inner-container ul.nav-menu {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 0; }
+    #header-inner-container ul.nav-menu li {
+      float: left;
+      list-style-type: none;
+      padding: 5px 10px;
+      margin-left: 10px;
+      background-color: #965786;
+      border-bottom: solid 2px #D692C5; }
+      #header-inner-container ul.nav-menu li a {
+        color: #eee;
+        font-weight: 400; }
+    #header-inner-container ul.nav-menu li:hover {
+      background-color: #a25f91; }
+  #header-inner-container #contact-font-size {
+    float: right; }
+  #header-inner-container #contact {
+    color: #eee;
+    background-color: #a25f91;
+    padding: 10px 20px; }
+    #header-inner-container #contact p {
+      font-size: 1em;
+      margin: 5px; }
+    #header-inner-container #contact i {
+      margin-right: 5px; }
+  #header-inner-container #font-size-adjust {
+    text-align: right;
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #eee; }
+    #header-inner-container #font-size-adjust a {
+      color: #eee; }
+
+.main-content {
+  width: 960px;
+  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; }
+
+.page-banner {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border-bottom: solid 2px #000;
+  background-color: #a25f91;
+  padding: 20px 0; }
+  .page-banner .page-banner-title {
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 20px; }
+    .page-banner .page-banner-title h1 {
+      font-weight: 400;
+      color: #eee;
+      font-size: 4em; }
+    .page-banner .page-banner-title p {
+      color: #eee;
+      font-size: 1em;
+      font-weight: 400; }
+  .page-banner .page-banner-image {
+    float: right;
+    background-image: url("img/banner1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 320px; }
+
+p.home-motto {
+  margin-top: 0;
+  font-size: 2em;
+  padding: 0 20px;
+  text-align: center; }
+
+#home-menu {
+  overflow: hidden;
+  padding: 0 20px; }
+  #home-menu .last {
+    margin-right: 0; }
+
+.home-menu-item {
+  width: 266px;
+  margin-right: 20px;
+  background: #eee;
+  float: left;
+  min-height: 275px; }
+  .home-menu-item .menu-heading {
+    padding: 8px 10px;
+    background-color: #a25f91;
+    color: #eee; }
+    .home-menu-item .menu-heading h2 {
+      font-size: 1.6em;
+      padding-bottom: 0;
+      border: none; }
+    .home-menu-item .menu-heading h2 span {
+      background: none; }
+  .home-menu-item .menu-image {
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    -webkit-box-shadow: inset 0px 5px 8px -6px #4c4c4c;
+    box-shadow: inset 0px 5px 8px -6px #4c4c4c; }
+  .home-menu-item .about {
+    background-image: url("img/about.jpg"); }
+  .home-menu-item .services {
+    background-image: url("img/our-services.jpg"); }
+  .home-menu-item .contact {
+    background-image: url("img/contact.jpg"); }
+  .home-menu-item .menu-blurb {
+    padding: 0 10px; }
+
+#breadcrumb-nav a {
+  line-height: 40px; }
+
+.no-js .liquid-slider {
+  height: 350px; }
+
+.ls-wrapper .ls-nav-left-arrow, .ls-wrapper .ls-nav-right-arrow {
+  margin-top: 162.5px; }
+
+#main-slider-wrapper {
+  border-bottom: solid 2px #000; }
+  #main-slider-wrapper .panel-wrapper {
+    height: 350px;
+    padding: 0 !important;
+    background-size: cover; }
+  #main-slider-wrapper h3 {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff; }
+  #main-slider-wrapper .slide1 {
+    background-image: url("img/homepage-banner-1.png"); }
+  #main-slider-wrapper .slide2 {
+    background-image: url("img/homepage-banner-2.png"); }
+
+#content-inner-container {
+  padding: 20px 40px; }
+
+#breadcrumb {
+  background-color: #F7f7f7;
+  height: 40px;
+  padding: 0 20px; }
+
+img.alignright {
+  float: right;
+  margin: 15px 0px 5px 10px;
+  clear: right; }
+
+ul.service-list {
+  /* padding: 0 0 0 20px; */
+  overflow: hidden;
+  width: 100%;
+  padding: 0; }
+  ul.service-list li {
+    padding: 1%;
+    list-style-type: none;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    float: left;
+    width: 46%; }
+  ul.service-list li:nth-child(odd) {
+    margin-right: 2%; }
+  ul.service-list i {
+    font-size: 1.6em;
+    vertical-align: middle;
+    margin-right: 5px; }
+
+ul.service-list.big-font li {
+  float: none !important;
+  width: auto !important;
+  margin-right: 0 !important; }
+
+#contact-container {
+  overflow: hidden;
+  width: 100%; }
+
+#contact-direct-details-image {
+  float: left;
+  margin-right: 20px;
+  max-width: 410px;
+  width: 410px; }
+
+#contact-image {
+  background: #eee;
+  border-radius: 5px;
+  max-width: 410px;
+  width: 410px;
+  height: auto;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/contact-image.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+    src='img/contact-image.png',
+    sizingMethod='scale')";
+  background-image: url("img/contact-image.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#contact-details {
+  background: #eee;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px; }
+  #contact-details h2 span {
+    background: none; }
+  #contact-details ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.6em;
+    margin: 20px 0 0; }
+  #contact-details li:first-child {
+    margin-bottom: 10px; }
+  #contact-details i {
+    margin-right: 10px; }
+
+#contact-form {
+  float: right;
+  background: #eee;
+  padding: 15px 20px;
+  border-radius: 5px;
+  max-width: 390px;
+  width: 390px; }
+  #contact-form h2 span {
+    background: none; }
+  #contact-form input, #contact-form textarea {
+    margin-top: 10px; }
+  #contact-form input[type="text"],
+  #contact-form textarea {
+    width: 90%;
+    padding: 5px; }
+  #contact-form .error {
+    padding: 5px 9px;
+    border: 1px solid red;
+    color: red;
+    border-radius: 3px; }
+  #contact-form .success {
+    padding: 5px 9px;
+    border: 1px solid green;
+    color: green;
+    border-radius: 3px; }
+  #contact-form form span {
+    color: red; }
+
+span.small-text {
+  font-size: 0.6em; }
+
+#footer {
+  background-color: #4c4c4c;
+  height: 92px;
+  width: 100%;
+  max-width: 100%;
+  padding-top: 20px; }
+
+#footer-inner-container {
+  width: 960px;
+  margin: 0 auto;
+  max-width: 960px;
+  overflow: hidden; }
+  #footer-inner-container p {
+    color: #eee; }
+
+p#copyright {
+  float: left;
+  line-height: 35px; }
+
+p#site-design-credits {
+  float: right; }
